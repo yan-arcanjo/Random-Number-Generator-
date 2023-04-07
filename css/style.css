@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #c4c4c4;
+}
+
+#box-area {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 35em;
+    border-radius: 10px;
+    -webkit-box-shadow: 9px 11px 32px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 11px 32px -8px rgba(0,0,0,0.75);
+    box-shadow: 9px 11px 32px -8px rgba(0,0,0,0.75);
+}
+
+#box-area #number {
+    font-size: 3em;
+}
+
+#box-area button {
+    padding: 1em 1.5em;
+    cursor: pointer;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+}
+
+#box-area button:active{
+    transform: scale(0.8);
+}
+
+#box-area button:hover{
+    background-color: rgb(133, 32, 133);
+}
+
+#range-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#range-input #range {
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    padding: .4rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#range-input label {
+    font-size: 0.8rem;
+    margin-bottom: 0.3em;
+}
+
+#modal-reset {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); 
+    
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: blueviolet;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 30rem;
+  height: 30rem; 
+  border-radius: 10px;
+}
+
+.modal-content h4 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#modal-btn button {
+    padding: 1em 1.5em;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2em;
+    transition: .5s all;
+}
+
+#modal-btn button:hover{
+    transform: scale(0.9);
+}
+
+#btn-confirm {
+    background-color: green;
+}
+
+#btn-cancel {
+    background-color: red;
+}
